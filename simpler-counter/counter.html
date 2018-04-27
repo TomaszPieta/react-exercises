@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><title>Simple React Counter</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.js"></script></head><body>
+  
+    <div id="app"></div>
+    <script type="text/babel">
+  
+  class App extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      clicks: 0
+    }
+  }
+  
+  increment(){
+    this.setState({
+      clicks: this.state.clicks +1
+    })
+  }
+  
+  decrement(){
+    this.setState({
+      clicks: this.state.clicks -1
+    })
+  }
+  
+  render(){
+    return(
+    <div>
+    <output>Kliknięcia: {this.state.clicks}</output>
+    <button onClick={this.increment.bind(this)}>Dodaj</button>
+    <button onClick={this.decrement.bind(this)}>Odejmij</button>
+    </div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+  </body></html>
