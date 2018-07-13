@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to left, yellow, orange);
+  text-align: center;
+  transition: 1s linear;
+  box-sizing: border-box;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  padding: 20px; 
+  box-shadow: 0 0 15px rgba(0,0,0,1);
+}
+.poll {
+  margin: 0 auto;
+  background-color: antiquewhite;
+  width: 70%;  
+  height: 20%;
+  color: black;
+}
+.survey {
+  background-color: yellow;
+  color: black;
+}
+.button {
+  font-weight: 900;
+  color: black;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+.plus {
+  background-color: green
+}
+.minus {
+  background-color: red;
+}
+input {
+  width: 80%;
+}
